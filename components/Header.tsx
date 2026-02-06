@@ -61,6 +61,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
               </div>
             </div>
 
+            <a href="#notre-pizzeria" className="text-[#1A3C34] hover:text-[#b0513a] transition-colors text-[11px] uppercase font-bold tracking-widest">Notre Pizzeria</a>
             <a href="#contact" className="text-[#1A3C34] hover:text-[#b0513a] transition-colors text-[11px] uppercase font-bold tracking-widest">Contact</a>
           </div>
 
@@ -100,6 +101,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
                 </button>
               ))}
             </div>
+            <a href="#notre-pizzeria" className="text-[#1A3C34] font-bold uppercase text-xs tracking-widest">Notre Pizzeria</a>
             <a href="#contact" className="text-[#1A3C34] font-bold uppercase text-xs tracking-widest">Contact</a>
             <div className="pt-4 flex flex-col gap-4">
                 <a href={`tel:${CONTACT_INFO.phone1}`} className="flex items-center gap-3 font-black text-[#1A3C34]">
