@@ -41,7 +41,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen overflow-x-hidden pt-20">
       <Header onNavigateMenu={handleNavigateToMenu} />
-      <Hero />
+      <Hero onNavigateMenu={() => handleNavigateToMenu()} />
       <TopCategories onNavigateMenu={() => handleNavigateToMenu()} />
       
       <section id="menu" className="py-10 md:py-20 bg-white">

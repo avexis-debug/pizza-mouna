@@ -2,7 +2,11 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  onNavigateMenu: () => void;
+}
+
+const Hero: React.FC<HeroProps> = ({ onNavigateMenu }) => {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background with Overlay */}
@@ -41,9 +45,9 @@ const Hero: React.FC = () => {
             <Phone size={16} className="group-hover:animate-pulse" />
             Commander
           </a>
-          <a href="#menu" className="border border-white/30 text-white px-10 py-4 font-bold hover:bg-white hover:text-[#1A3C34] transition-all transform hover:-translate-y-1 backdrop-blur-sm uppercase text-xs tracking-[0.2em]">
+          <button onClick={onNavigateMenu} className="border border-white/30 text-white px-10 py-4 font-bold hover:bg-white hover:text-[#1A3C34] transition-all transform hover:-translate-y-1 backdrop-blur-sm uppercase text-xs tracking-[0.2em]">
             Voir la Carte
-          </a>
+          </button>
         </div>
       </div>
 

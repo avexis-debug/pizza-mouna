@@ -91,8 +91,8 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
         {/* Mobile Menu */}
         <div className={`lg:hidden overflow-hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-screen pb-8 border-t border-gray-100' : 'max-h-0'}`}>
           <div className="flex flex-col space-y-5 pt-6">
-            <a href="/" className="text-[#b0513a] font-bold uppercase text-xs tracking-widest">Accueil</a>
-            <div className="space-y-3 border-l-2 border-[#b0513a]/20 pl-4">
+            <a href="/" className="text-[#b0513a] font-bold uppercase text-sm tracking-widest py-1">Accueil</a>
+            <div className="space-y-4 border-l-2 border-[#b0513a]/20 pl-4">
                {categories.map((cat) => (
                 <button
                   key={cat.id}
@@ -100,14 +100,14 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
                     onNavigateMenu(cat.id);
                     setIsMobileMenuOpen(false);
                   }}
-                  className="block w-full text-left text-xs font-bold text-[#1A3C34] uppercase tracking-widest"
+                  className="block w-full text-left text-sm font-bold text-[#1A3C34] uppercase tracking-widest py-1"
                 >
                   {cat.name}
                 </button>
               ))}
             </div>
-            <a href="#notre-pizzeria" className="text-[#1A3C34] font-bold uppercase text-xs tracking-widest">Notre Pizzeria</a>
-            <a href="#contact" className="text-[#1A3C34] font-bold uppercase text-xs tracking-widest">Contact</a>
+            <a href="#notre-pizzeria" className="text-[#1A3C34] font-bold uppercase text-sm tracking-widest py-1">Notre Pizzeria</a>
+            <a href="#contact" className="text-[#1A3C34] font-bold uppercase text-sm tracking-widest py-1">Contact</a>
             <div className="pt-4 flex flex-col gap-3">
                 <a href={`tel:${CONTACT_INFO.phone1}`} className="flex items-center gap-3 font-black text-[#1A3C34]">
                     <Phone size={18} className="text-[#b0513a]" /> {CONTACT_INFO.phone1}
