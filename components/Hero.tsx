@@ -16,14 +16,14 @@ const Hero: React.FC = () => {
       {/* Decorative top line */}
       <div className="absolute top-32 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4">
         <span className="block w-12 h-[1px] bg-[#d4735a]"></span>
-        <span className="text-[#d4735a] text-[10px] uppercase tracking-[0.4em] font-bold">Depuis Beaumont</span>
+        <span className="text-[#d4735a] text-[10px] uppercase tracking-[0.4em] font-bold">Depuis 2017</span>
         <span className="block w-12 h-[1px] bg-[#d4735a]"></span>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <p className="text-white/60 text-xs md:text-sm uppercase tracking-[0.5em] mb-6 font-light">
-          Pizzeria au feu de bois à Beaumont
+          L'authentique goût italien
         </p>
         <h1 className="text-white text-5xl md:text-7xl lg:text-9xl font-bold leading-[0.9] mb-8 uppercase tracking-tight">
           Pizzeria
@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
         <div className="flex items-center justify-center gap-6 mb-10">
           <span className="block w-16 h-[1px] bg-white/30"></span>
           <p className="text-white/90 text-lg md:text-2xl font-serif italic">
-            Pizza cuite au feu de bois
+            Cuisson traditionnelle au feu de bois
           </p>
           <span className="block w-16 h-[1px] bg-white/30"></span>
         </div>
