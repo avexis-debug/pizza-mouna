@@ -59,9 +59,6 @@ const Features: React.FC = () => {
                 alt="Pizzeria La Mouna - Beaumont"
                 className="w-full h-[500px] object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
-                <p className="text-white font-serif italic text-lg">Cuite au feu de bois, comme en Italie.</p>
-              </div>
             </div>
           </div>
         </div>
