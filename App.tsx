@@ -56,7 +56,7 @@ const App: React.FC = () => {
         {/* Pastas */}
         <div className="py-10 bg-[#FAF9F6]/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
-                <h3 id="section-pates" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Pâtes & Spécialités</h3>
+                <h3 id="section-pates" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Pâtes</h3>
             </div>
             <MenuSection 
               category={PASTA_MENU} 
