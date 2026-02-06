@@ -36,7 +36,7 @@ const Features: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1A3C34]">Livraison gratuite</h4>
-                  <p className="text-gray-500 text-sm">Sur Beaumont, Thuin, Solre-sur-Sambre et environs</p>
+                  <p className="text-gray-500 text-sm">Sur toute la commune de Beaumont et environs</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

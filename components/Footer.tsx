@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                 <img src="/Logo_Footer.png" alt="La Mouna Pizza" className="h-16 w-auto" />
             </div>
             <p className="text-white leading-relaxed mb-6 italic max-w-md">
-              "Votre pizzeria au feu de bois à Beaumont. Livraison gratuite sur Beaumont, Thuin et environs. Pizzas, pâtes, escalopes et plats préparés."
+              "Votre pizzeria au feu de bois à Beaumont. Livraison gratuite sur toute la commune de Beaumont. Pizzas, pâtes, escalopes et plats préparés."
             </p>
             
             {/* Google Maps Embed */}
@@ -71,11 +71,12 @@ const Footer: React.FC = () => {
             <h4 className="text-xl font-bold mb-8 uppercase tracking-widest text-[#d4735a]">Livraison Pizza</h4>
             <ul className="space-y-4 text-white text-sm">
               <li>Livraison pizza Beaumont</li>
-              <li>Livraison pizza Thuin</li>
-              <li>Livraison pizza Solre-sur-Sambre</li>
-              <li>Livraison pizza Strée</li>
+              <li>Livraison pizza Barbençon</li>
               <li>Livraison pizza Leugnies</li>
+              <li>Livraison pizza Leval-Chaudeville</li>
               <li>Livraison pizza Renlies</li>
+              <li>Livraison pizza Solre-Saint-Géry</li>
+              <li>Livraison pizza Thirimont</li>
             </ul>
           </div>
         </div>
