@@ -7,19 +7,18 @@ const Hero: React.FC = () => {
       {/* Background with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-[10000ms] hover:scale-110"
-        style={{ backgroundImage: 'url("/Pizza.jpg")' }}
+        style={{ backgroundImage: 'url("/hero-banner.jpg")' }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <p className="text-[#FF5E3A] font-serif italic text-xl md:text-2xl mb-4">La Meilleure Pizzeria de Beaumont</p>
-        <h1 className="text-white text-5xl md:text-8xl font-bold leading-tight mb-8 drop-shadow-lg uppercase tracking-tighter">
-          L'Authentique Pizza au Feu de Bois à Beaumont
+        <h1 className="text-white text-5xl md:text-8xl font-bold leading-tight mb-6 drop-shadow-lg uppercase tracking-tighter">
+          Pizzeria à Beaumont
         </h1>
-        <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto italic">
-            Livraison gratuite ou vente à emporter. Goûtez la différence d'une cuisson traditionnelle.
+        <p className="text-white text-xl md:text-2xl font-serif italic">
+          Pizza cuite au feu de bois
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="tel:071327874" className="bg-[#FF5E3A] text-white px-8 py-4 rounded-sm font-bold text-lg hover:bg-[#e04d2b] transition-all transform hover:-translate-y-1 shadow-xl flex items-center justify-center gap-2">
