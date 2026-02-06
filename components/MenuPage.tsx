@@ -12,10 +12,14 @@ interface MenuPageProps {
 const MenuPage: React.FC<MenuPageProps> = ({ onBack, initialCategory }) => {
   useEffect(() => {
     if (initialCategory) {
-      const element = document.getElementById(initialCategory);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      setTimeout(() => {
+        const element = document.getElementById(initialCategory);
+        if (element) {
+          const headerOffset = 96;
+          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
+        }
+      }, 100);
     } else {
       window.scrollTo(0, 0);
     }
@@ -60,7 +64,11 @@ const MenuPage: React.FC<MenuPageProps> = ({ onBack, initialCategory }) => {
       <Header onNavigateMenu={(cat) => {
           if (cat) {
               const el = document.getElementById(cat);
-              el?.scrollIntoView({ behavior: 'smooth' });
+              if (el) {
+                const headerOffset = 96;
+                const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth' });
+              }
           }
       }} />
 
