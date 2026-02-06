@@ -9,12 +9,12 @@ const Features: React.FC = () => {
         <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-16 items-center">
           {/* Texte */}
           <div className="w-full lg:w-1/2">
-            <p className="text-[#b0513a] font-serif italic mb-2">Notre Histoire</p>
+            <p className="text-[#b0513a] font-serif italic mb-2">Notre Pizzeria à Beaumont</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               La Mouna Pizza, votre pizzeria au feu de bois à Beaumont
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Depuis notre ouverture, La Mouna Pizza s'est imposée comme la référence de la pizza artisanale à Beaumont. Notre secret ? Un four au feu de bois traditionnel qui donne à chaque pizza une croûte croustillante et un goût fumé incomparable.
+              Située Chaussée de Chimay 12 à Beaumont, La Mouna Pizza s'est imposée comme la référence de la pizza artisanale dans la région. Notre secret ? Un four au feu de bois traditionnel qui donne à chaque pizza une croûte croustillante et un goût fumé incomparable.
             </p>
             <p className="text-gray-600 mb-10 leading-relaxed">
               Nous sélectionnons les meilleurs ingrédients pour vous offrir des pizzas généreuses et authentiques. De la pâte pétrie à la main chaque jour jusqu'à la cuisson au feu de bois, chaque étape est réalisée avec passion et savoir-faire.
@@ -36,7 +36,7 @@ const Features: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1A3C34]">Livraison gratuite</h4>
-                  <p className="text-gray-500 text-sm">Sur Beaumont et ses environs</p>
+                  <p className="text-gray-500 text-sm">Sur Beaumont, Thuin, Solre-sur-Sambre et environs</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">

@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         <p className="text-white/60 text-xs md:text-sm uppercase tracking-[0.5em] mb-6 font-light">
-          L'authentique goût italien
+          Pizzeria au feu de bois à Beaumont
         </p>
         <h1 className="text-white text-5xl md:text-7xl lg:text-9xl font-bold leading-[0.9] mb-8 uppercase tracking-tight">
           Pizzeria
