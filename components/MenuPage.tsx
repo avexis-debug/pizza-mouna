@@ -25,18 +25,18 @@ const MenuPage: React.FC<MenuPageProps> = ({ onBack, initialCategory }) => {
     <div id={id} className="pt-20 first:pt-0">
       <div className="flex items-center gap-4 mb-10">
         <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-tighter text-[#1A3C34]">{title}</h2>
-        <div className="flex-grow h-[2px] bg-[#FF5E3A]/20"></div>
+        <div className="flex-grow h-[2px] bg-[#b0513a]/20"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10">
         {items.map((item, idx) => (
           <div key={idx} className="group relative">
             <div className="flex justify-between items-baseline mb-2">
               <div className="flex items-center gap-2">
-                <h3 className="text-lg font-bold group-hover:text-[#FF5E3A] transition-colors uppercase tracking-tight leading-none">
+                <h3 className="text-lg font-bold group-hover:text-[#b0513a] transition-colors uppercase tracking-tight leading-none">
                   {item.name}
                 </h3>
                 {item.popular && (
-                  <span className="bg-[#FF5E3A]/10 text-[#FF5E3A] text-[9px] px-2 py-0.5 rounded-full font-bold uppercase tracking-widest">Populaire</span>
+                  <span className="bg-[#b0513a]/10 text-[#b0513a] text-[9px] px-2 py-0.5 rounded-full font-bold uppercase tracking-widest">Populaire</span>
                 )}
               </div>
               <div className="flex-grow border-b border-dotted border-gray-200 mx-3"></div>
@@ -70,11 +70,11 @@ const MenuPage: React.FC<MenuPageProps> = ({ onBack, initialCategory }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <button 
             onClick={onBack}
-            className="mb-8 text-[#FF5E3A] hover:text-white transition-colors font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 mx-auto"
+            className="mb-8 text-[#b0513a] hover:text-white transition-colors font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 mx-auto"
           >
             ← Retour à l'accueil
           </button>
-          <p className="text-[#FF5E3A] font-serif italic text-xl mb-4">Buon Appetito</p>
+          <p className="text-[#b0513a] font-serif italic text-xl mb-4">Buon Appetito</p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tighter">Notre Carte Complète</h1>
           <p className="text-white/60 max-w-2xl mx-auto text-base italic">
             De nos entrées croustillantes à nos célèbres pizzas au feu de bois, découvrez toutes les saveurs de La Mouna Pizza.
@@ -101,13 +101,13 @@ const MenuPage: React.FC<MenuPageProps> = ({ onBack, initialCategory }) => {
             <p className="text-gray-500 mb-8 italic">Livraison gratuite sur Beaumont et ses environs.</p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-8">
                <div className="text-center">
-                  <p className="text-[10px] font-black text-[#FF5E3A] uppercase tracking-widest mb-1">Ligne 1</p>
-                  <a href="tel:071327874" className="text-3xl font-black text-[#1A3C34] hover:text-[#FF5E3A] transition-colors">071 32 78 74</a>
+                  <p className="text-[10px] font-black text-[#b0513a] uppercase tracking-widest mb-1">Ligne 1</p>
+                  <a href="tel:071327874" className="text-3xl font-black text-[#1A3C34] hover:text-[#b0513a] transition-colors">071 32 78 74</a>
                </div>
                <div className="hidden md:block w-px h-12 bg-gray-200"></div>
                <div className="text-center">
-                  <p className="text-[10px] font-black text-[#FF5E3A] uppercase tracking-widest mb-1">Ligne 2</p>
-                  <a href="tel:0484202042" className="text-3xl font-black text-[#1A3C34] hover:text-[#FF5E3A] transition-colors">0484 20 20 42</a>
+                  <p className="text-[10px] font-black text-[#b0513a] uppercase tracking-widest mb-1">Ligne 2</p>
+                  <a href="tel:0484202042" className="text-3xl font-black text-[#1A3C34] hover:text-[#b0513a] transition-colors">0484 20 20 42</a>
                </div>
             </div>
         </div>

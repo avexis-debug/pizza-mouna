@@ -16,11 +16,11 @@ const TopCategories: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           {categories.map((cat, idx) => (
             <div key={idx} className="group cursor-pointer flex flex-col items-center">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg transition-all duration-300 group-hover:border-[#FF5E3A] group-hover:scale-105 mb-4 relative">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-lg transition-all duration-300 group-hover:border-[#b0513a] group-hover:scale-105 mb-4 relative">
                 <img src={cat.img} alt={cat.name} className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" />
                 <div className="absolute inset-0 bg-[#1A3C34]/10 group-hover:bg-transparent transition-colors"></div>
               </div>
-              <p className="text-[#1A3C34] font-bold text-center group-hover:text-[#FF5E3A] transition-colors uppercase text-sm tracking-wider">{cat.name}</p>
+              <p className="text-[#1A3C34] font-bold text-center group-hover:text-[#b0513a] transition-colors uppercase text-sm tracking-wider">{cat.name}</p>
             </div>
           ))}
         </div>

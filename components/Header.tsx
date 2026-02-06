@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
 
           {/* Desktop Nav */}
           <div className="hidden lg:flex space-x-10 items-center">
-            <a href="/" className="text-[#1A3C34] hover:text-[#FF5E3A] transition-colors font-bold uppercase text-[11px] tracking-widest">Accueil</a>
+            <a href="/" className="text-[#1A3C34] hover:text-[#b0513a] transition-colors font-bold uppercase text-[11px] tracking-widest">Accueil</a>
             
             <div 
               className="relative h-20 flex items-center group cursor-pointer"
@@ -40,12 +40,12 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
             >
               <button 
                 onClick={() => onNavigateMenu()}
-                className="flex items-center gap-1 text-[#1A3C34] font-bold uppercase text-[11px] tracking-widest group-hover:text-[#FF5E3A] transition-colors"
+                className="flex items-center gap-1 text-[#1A3C34] font-bold uppercase text-[11px] tracking-widest group-hover:text-[#b0513a] transition-colors"
               >
                 Menu <ChevronDown size={14} className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               
-              <div className={`absolute top-full left-0 w-48 bg-white shadow-xl border-t-2 border-[#FF5E3A] py-2 transition-all duration-300 origin-top ${isDropdownOpen ? 'opacity-100 scale-y-100 pointer-events-auto' : 'opacity-0 scale-y-0 pointer-events-none'}`}>
+              <div className={`absolute top-full left-0 w-48 bg-white shadow-xl border-t-2 border-[#b0513a] py-2 transition-all duration-300 origin-top ${isDropdownOpen ? 'opacity-100 scale-y-100 pointer-events-auto' : 'opacity-0 scale-y-0 pointer-events-none'}`}>
                 {categories.map((cat) => (
                   <button
                     key={cat.id}
@@ -53,7 +53,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
                       onNavigateMenu(cat.id);
                       setIsDropdownOpen(false);
                     }}
-                    className="w-full text-left px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-gray-600 hover:text-[#FF5E3A] hover:bg-gray-50 transition-colors"
+                    className="w-full text-left px-6 py-3 text-[10px] font-bold uppercase tracking-widest text-gray-600 hover:text-[#b0513a] hover:bg-gray-50 transition-colors"
                   >
                     {cat.name}
                   </button>
@@ -61,13 +61,13 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
               </div>
             </div>
 
-            <a href="#contact" className="text-[#1A3C34] hover:text-[#FF5E3A] transition-colors text-[11px] uppercase font-bold tracking-widest">Contact</a>
+            <a href="#contact" className="text-[#1A3C34] hover:text-[#b0513a] transition-colors text-[11px] uppercase font-bold tracking-widest">Contact</a>
           </div>
 
           {/* CTA & Phone */}
           <div className="hidden md:flex items-center gap-6">
-            <a href={`tel:${CONTACT_INFO.phone1}`} className="flex items-center gap-2 text-[#1A3C34] hover:text-[#FF5E3A] transition-colors font-black text-sm tracking-tight">
-              <Phone size={16} className="text-[#FF5E3A]" /> {CONTACT_INFO.phone1}
+            <a href={`tel:${CONTACT_INFO.phone1}`} className="flex items-center gap-2 text-[#1A3C34] hover:text-[#b0513a] transition-colors font-black text-sm tracking-tight">
+              <Phone size={16} className="text-[#b0513a]" /> {CONTACT_INFO.phone1}
             </a>
             <a href={`tel:${CONTACT_INFO.phone1}`} className="bg-[#1A3C34] text-white px-6 py-3 rounded-full font-bold hover:bg-[#2c534a] transition-all uppercase text-[10px] tracking-widest shadow-lg transform hover:scale-105">
               Commander
@@ -85,8 +85,8 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
         {/* Mobile Menu */}
         <div className={`lg:hidden overflow-hidden transition-all duration-300 ${isMobileMenuOpen ? 'max-h-screen pb-8 border-t border-gray-100' : 'max-h-0'}`}>
           <div className="flex flex-col space-y-5 pt-6">
-            <a href="/" className="text-[#FF5E3A] font-bold uppercase text-xs tracking-widest">Accueil</a>
-            <div className="space-y-3 border-l-2 border-[#FF5E3A]/20 pl-4">
+            <a href="/" className="text-[#b0513a] font-bold uppercase text-xs tracking-widest">Accueil</a>
+            <div className="space-y-3 border-l-2 border-[#b0513a]/20 pl-4">
                {categories.map((cat) => (
                 <button
                   key={cat.id}
@@ -103,9 +103,9 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
             <a href="#contact" className="text-[#1A3C34] font-bold uppercase text-xs tracking-widest">Contact</a>
             <div className="pt-4 flex flex-col gap-4">
                 <a href={`tel:${CONTACT_INFO.phone1}`} className="flex items-center gap-3 font-black text-[#1A3C34]">
-                    <Phone size={18} className="text-[#FF5E3A]" /> {CONTACT_INFO.phone1}
+                    <Phone size={18} className="text-[#b0513a]" /> {CONTACT_INFO.phone1}
                 </a>
-                <a href={`tel:${CONTACT_INFO.phone1}`} className="bg-[#FF5E3A] text-white py-4 rounded-xl text-center font-bold uppercase text-xs tracking-widest">
+                <a href={`tel:${CONTACT_INFO.phone1}`} className="bg-[#b0513a] text-white py-4 rounded-xl text-center font-bold uppercase text-xs tracking-widest">
                     Passer une commande
                 </a>
             </div>

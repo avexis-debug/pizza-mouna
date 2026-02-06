@@ -7,7 +7,7 @@ const ContactForm: React.FC = () => {
     <section id="contact" className="py-20 bg-[#FAF9F6]">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
-          <p className="text-[#FF5E3A] font-serif italic mb-2">Contactez-nous</p>
+          <p className="text-[#b0513a] font-serif italic mb-2">Contactez-nous</p>
           <h2 className="text-4xl font-bold">Prendre Contact</h2>
         </div>
 
@@ -17,7 +17,7 @@ const ContactForm: React.FC = () => {
             <input 
               type="text" 
               placeholder="Nom" 
-              className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#FF5E3A] transition-colors"
+              className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#b0513a] transition-colors"
             />
           </div>
 
@@ -26,7 +26,7 @@ const ContactForm: React.FC = () => {
             <input 
               type="email" 
               placeholder="Email" 
-              className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#FF5E3A] transition-colors"
+              className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#b0513a] transition-colors"
             />
           </div>
 
@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
             <input 
               type="tel" 
               placeholder="Téléphone" 
-              className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#FF5E3A] transition-colors"
+              className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#b0513a] transition-colors"
             />
           </div>
 
@@ -44,13 +44,13 @@ const ContactForm: React.FC = () => {
             <input 
               type="text" 
               placeholder="Date & Heure" 
-              className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#FF5E3A] transition-colors"
+              className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#b0513a] transition-colors"
             />
           </div>
 
           <div className="relative md:col-span-2">
             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"><Users size={20} /></span>
-            <select className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#FF5E3A] transition-colors appearance-none">
+            <select className="w-full bg-white border border-gray-200 rounded-sm py-4 pl-12 pr-4 focus:outline-none focus:border-[#b0513a] transition-colors appearance-none">
               <option value="">Nombre d'invités</option>
               <option value="1">1 Personne</option>
               <option value="2">2 Personnes</option>
@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
             <textarea 
               placeholder="Votre message" 
               rows={4}
-              className="w-full bg-white border border-gray-200 rounded-sm py-4 px-4 focus:outline-none focus:border-[#FF5E3A] transition-colors resize-none"
+              className="w-full bg-white border border-gray-200 rounded-sm py-4 px-4 focus:outline-none focus:border-[#b0513a] transition-colors resize-none"
             ></textarea>
           </div>
 

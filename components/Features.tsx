@@ -9,7 +9,7 @@ const Features: React.FC = () => {
         <div className="flex flex-col-reverse lg:flex-row gap-16 items-center">
           {/* Texte */}
           <div className="w-full lg:w-1/2">
-            <p className="text-[#FF5E3A] font-serif italic mb-2">Notre Histoire</p>
+            <p className="text-[#b0513a] font-serif italic mb-2">Notre Histoire</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               La Mouna Pizza, votre pizzeria au feu de bois à Beaumont
             </h2>
@@ -22,8 +22,8 @@ const Features: React.FC = () => {
 
             <div className="space-y-5">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#FF5E3A]/10 rounded-lg flex items-center justify-center shrink-0">
-                  <Flame className="text-[#FF5E3A]" size={24} />
+                <div className="w-12 h-12 bg-[#b0513a]/10 rounded-lg flex items-center justify-center shrink-0">
+                  <Flame className="text-[#b0513a]" size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1A3C34]">Cuisson au feu de bois</h4>
@@ -31,8 +31,8 @@ const Features: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#FF5E3A]/10 rounded-lg flex items-center justify-center shrink-0">
-                  <Truck className="text-[#FF5E3A]" size={24} />
+                <div className="w-12 h-12 bg-[#b0513a]/10 rounded-lg flex items-center justify-center shrink-0">
+                  <Truck className="text-[#b0513a]" size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1A3C34]">Livraison gratuite</h4>
@@ -40,8 +40,8 @@ const Features: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-[#FF5E3A]/10 rounded-lg flex items-center justify-center shrink-0">
-                  <Clock className="text-[#FF5E3A]" size={24} />
+                <div className="w-12 h-12 bg-[#b0513a]/10 rounded-lg flex items-center justify-center shrink-0">
+                  <Clock className="text-[#b0513a]" size={24} />
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1A3C34]">Ouvert 7j/7</h4>

@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
              <div className="mb-6">
                 <img src="/Logo_Footer.png" alt="La Mouna Pizza" className="h-16 w-auto" />
             </div>
-            <p className="text-gray-400 leading-relaxed mb-6 italic max-w-md">
+            <p className="text-white leading-relaxed mb-6 italic max-w-md">
               "Livraison ou à emporter. Le goût authentique de l'Italie cuit avec passion au feu de bois à Beaumont."
             </p>
             
@@ -34,21 +34,21 @@ const Footer: React.FC = () => {
 
           {/* Contact & Hours */}
           <div>
-            <h4 className="text-xl font-bold mb-8 uppercase tracking-widest text-[#FF5E3A]">Infos Pratiques</h4>
-            <ul className="space-y-4 text-gray-400">
+            <h4 className="text-xl font-bold mb-8 uppercase tracking-widest text-[#b0513a]">Infos Pratiques</h4>
+            <ul className="space-y-4 text-white">
               <li className="flex items-start gap-3">
-                <Phone size={18} className="text-[#FF5E3A] mt-1 shrink-0" />
+                <Phone size={18} className="text-[#b0513a] mt-1 shrink-0" />
                 <div className="flex flex-col">
                     <a href={`tel:${CONTACT_INFO.phone1}`} className="hover:text-white transition-colors">{CONTACT_INFO.phone1}</a>
                     <a href={`tel:${CONTACT_INFO.phone2}`} className="hover:text-white transition-colors">{CONTACT_INFO.phone2}</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-[#FF5E3A] mt-1 shrink-0" />
+                <MapPin size={18} className="text-[#b0513a] mt-1 shrink-0" />
                 <span>{CONTACT_INFO.address}</span>
               </li>
               <li className="flex items-start gap-3">
-                <Clock size={18} className="text-[#FF5E3A] mt-1 shrink-0" />
+                <Clock size={18} className="text-[#b0513a] mt-1 shrink-0" />
                 <div className="text-xs">
                     <p>7j/7 : 11h30 - 14h00</p>
                     <p>et 17h30 - 22h00</p>
@@ -56,10 +56,10 @@ const Footer: React.FC = () => {
               </li>
             </ul>
             <div className="flex gap-4 mt-8">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FF5E3A] transition-all">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#b0513a] transition-all">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#FF5E3A] transition-all">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#b0513a] transition-all">
                 <Instagram size={18} />
               </a>
             </div>
@@ -67,8 +67,8 @@ const Footer: React.FC = () => {
 
           {/* Specialites */}
           <div>
-            <h4 className="text-xl font-bold mb-8 uppercase tracking-widest text-[#FF5E3A]">Spécialités</h4>
-            <ul className="space-y-4 text-gray-400">
+            <h4 className="text-xl font-bold mb-8 uppercase tracking-widest text-[#b0513a]">Spécialités</h4>
+            <ul className="space-y-4 text-white">
               <li>Pizzas au Feu de Bois</li>
               <li>Pastas Artisanales</li>
               <li>Escalopes Beaumont</li>
@@ -78,11 +78,11 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 gap-4 uppercase tracking-[0.2em]">
+        <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[10px] text-white gap-4 uppercase tracking-[0.2em]">
           <div className="text-center md:text-left">
-            <p>© 2025 Tous Droits Réservés <span className="text-[#FF5E3A]">La Mouna Pizza Beaumont</span></p>
+            <p>© 2025 Tous Droits Réservés <span className="text-[#b0513a]">La Mouna Pizza Beaumont</span></p>
             <p className="mt-2 text-[9px] tracking-widest opacity-80">
-              Site réalisé par <a href="https://siteexpress24.com" target="_blank" rel="noopener noreferrer" className="text-[#FF5E3A] hover:text-white transition-colors font-bold">siteexpress24.com</a>
+              Site réalisé par <a href="https://siteexpress24.com" target="_blank" rel="noopener noreferrer" className="text-[#b0513a] hover:text-white transition-colors font-bold">siteexpress24.com</a>
             </p>
           </div>
           <p className="italic font-serif text-[12px]">buon appetito da Beaumont!</p>

@@ -19,11 +19,11 @@ const PizzasPage: React.FC<PizzasPageProps> = ({ onBack }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <button 
             onClick={onBack}
-            className="mb-8 text-[#FF5E3A] hover:text-white transition-colors font-bold uppercase tracking-widest text-xs flex items-center gap-2 mx-auto"
+            className="mb-8 text-[#b0513a] hover:text-white transition-colors font-bold uppercase tracking-widest text-xs flex items-center gap-2 mx-auto"
           >
             ← Retour à l'accueil
           </button>
-          <p className="text-[#FF5E3A] font-serif italic text-xl mb-4">La Tradition Italienne</p>
+          <p className="text-[#b0513a] font-serif italic text-xl mb-4">La Tradition Italienne</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 uppercase tracking-tighter">L'Art de la Pizza au Feu de Bois</h1>
           <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed italic">
             Découvrez notre large gamme de pizzas artisanales, préparées avec soin et cuites dans notre four traditionnel. 
@@ -40,11 +40,11 @@ const PizzasPage: React.FC<PizzasPageProps> = ({ onBack }) => {
               <div key={idx} className="group relative">
                 <div className="flex justify-between items-baseline mb-2">
                   <div className="flex items-center gap-2">
-                    <h3 className="text-xl font-bold group-hover:text-[#FF5E3A] transition-colors uppercase tracking-tight">
+                    <h3 className="text-xl font-bold group-hover:text-[#b0513a] transition-colors uppercase tracking-tight">
                       {item.name}
                     </h3>
                     {item.popular && (
-                      <span className="bg-[#FF5E3A]/10 text-[#FF5E3A] text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-widest">Populaire</span>
+                      <span className="bg-[#b0513a]/10 text-[#b0513a] text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-widest">Populaire</span>
                     )}
                   </div>
                   <div className="flex-grow border-b border-dotted border-gray-200 mx-3"></div>
@@ -63,9 +63,9 @@ const PizzasPage: React.FC<PizzasPageProps> = ({ onBack }) => {
             <h4 className="text-2xl font-bold mb-4">Une envie particulière ?</h4>
             <p className="text-white/70 mb-8 max-w-xl mx-auto">Toutes nos pizzas peuvent être personnalisées. N'hésitez pas à nous demander des suppléments lors de votre commande.</p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-               <a href="tel:071327874" className="text-2xl font-black hover:text-[#FF5E3A] transition-colors">071 32 78 74</a>
-               <span className="hidden md:block text-[#FF5E3A] text-2xl">•</span>
-               <a href="tel:0484202042" className="text-2xl font-black hover:text-[#FF5E3A] transition-colors">0484 20 20 42</a>
+               <a href="tel:071327874" className="text-2xl font-black hover:text-[#b0513a] transition-colors">071 32 78 74</a>
+               <span className="hidden md:block text-[#b0513a] text-2xl">•</span>
+               <a href="tel:0484202042" className="text-2xl font-black hover:text-[#b0513a] transition-colors">0484 20 20 42</a>
             </div>
           </div>
         </div>

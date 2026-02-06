@@ -26,7 +26,7 @@ const AboutUs: React.FC = () => {
 
           {/* Right Side: Content */}
           <div className="w-full lg:w-1/2">
-            <p className="text-[#FF5E3A] font-serif italic mb-2">À Propos</p>
+            <p className="text-[#b0513a] font-serif italic mb-2">À Propos</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Créer une Pizza Authentique avec Passion, Qualité et Tradition
             </h2>
@@ -66,7 +66,7 @@ const AboutUs: React.FC = () => {
               </div>
             </div>
 
-            <button className="mt-10 bg-[#FF5E3A] text-white px-8 py-3 rounded-sm font-bold hover:bg-[#e04d2b] transition-colors">
+            <button className="mt-10 bg-[#b0513a] text-white px-8 py-3 rounded-sm font-bold hover:bg-[#e04d2b] transition-colors">
               Contactez-nous
             </button>
           </div>

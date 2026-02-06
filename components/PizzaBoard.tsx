@@ -14,7 +14,7 @@ const PizzaBoard: React.FC<PizzaBoardProps> = ({ onBack }) => {
 
   const MenuSection = ({ category, columns = 3 }: { category: any, columns?: number }) => (
     <div className="mb-16">
-      <h2 className="text-[#FF5E3A] text-3xl md:text-4xl font-serif italic mb-8 border-b border-white/10 pb-2 inline-block">
+      <h2 className="text-[#b0513a] text-3xl md:text-4xl font-serif italic mb-8 border-b border-white/10 pb-2 inline-block">
         {category.title}
       </h2>
       <div className={`grid grid-cols-1 md:grid-cols-2 ${columns === 3 ? 'lg:grid-cols-3' : columns === 2 ? 'lg:grid-cols-2' : 'lg:grid-cols-1'} gap-x-12 gap-y-4`}>
@@ -45,12 +45,12 @@ const PizzaBoard: React.FC<PizzaBoardProps> = ({ onBack }) => {
       <div className="max-w-7xl mx-auto px-4 pt-10 pb-6 flex items-center justify-between border-b border-white/10 mb-10">
         <button 
           onClick={onBack}
-          className="flex items-center gap-2 text-[#FF5E3A] hover:text-white transition-colors font-bold uppercase tracking-widest text-xs"
+          className="flex items-center gap-2 text-[#b0513a] hover:text-white transition-colors font-bold uppercase tracking-widest text-xs"
         >
           <ChevronLeft size={18} /> Retour
         </button>
         <div className="text-center">
-            <h1 className="text-[#FF5E3A] text-4xl md:text-5xl font-serif italic leading-none">LA MOUNA Pizza</h1>
+            <h1 className="text-[#b0513a] text-4xl md:text-5xl font-serif italic leading-none">LA MOUNA Pizza</h1>
             <p className="text-white/50 text-[10px] uppercase tracking-[0.3em] mt-1">Au feu de bois</p>
         </div>
         <div className="hidden sm:block text-right text-[10px] text-white/40 leading-tight">
@@ -77,12 +77,12 @@ const PizzaBoard: React.FC<PizzaBoardProps> = ({ onBack }) => {
 
         {/* Footer style image */}
         <div className="mt-20 flex flex-col items-center text-center space-y-4 border-t border-white/10 pt-10">
-           <div className="bg-[#FF5E3A] text-white px-8 py-3 rounded-full font-bold text-xl">
+           <div className="bg-[#b0513a] text-white px-8 py-3 rounded-full font-bold text-xl">
              Livraison Gratuite
            </div>
            <p className="text-2xl font-black text-white flex flex-col md:flex-row gap-4 items-center">
               <span>071 32 78 74</span>
-              <span className="hidden md:inline text-[#FF5E3A]">•</span>
+              <span className="hidden md:inline text-[#b0513a]">•</span>
               <span>0484 20 20 42</span>
            </p>
            <p className="text-[#E9DCC9]/50 italic">buon appetito!</p>

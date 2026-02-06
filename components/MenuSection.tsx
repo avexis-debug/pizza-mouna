@@ -27,7 +27,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
             <div key={idx} className="group cursor-pointer">
               <div className="flex justify-between items-baseline mb-1">
                 <div className="flex items-center gap-3">
-                  <h4 className="text-xl font-bold group-hover:text-[#FF5E3A] transition-colors uppercase tracking-tight">{item.name}</h4>
+                  <h4 className="text-xl font-bold group-hover:text-[#b0513a] transition-colors uppercase tracking-tight">{item.name}</h4>
                   <div className="flex gap-2">
                     {item.tags?.map((tag, tIdx) => (
                       <span key={tIdx} className="text-[10px] uppercase font-bold text-[#1A3C34]/60 tracking-wider">
@@ -37,7 +37,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
                   </div>
                 </div>
                 <div className="flex-grow border-b border-dotted border-gray-300 mx-4"></div>
-                <span className="text-[#FF5E3A] font-bold text-lg bg-white px-3 py-1 rounded-sm shadow-sm">{item.price}</span>
+                <span className="text-[#b0513a] font-bold text-lg bg-white px-3 py-1 rounded-sm shadow-sm">{item.price}</span>
               </div>
               <p className="text-gray-500 text-sm leading-relaxed max-w-lg italic">
                 {item.description}
@@ -49,9 +49,9 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
             <div className="pt-4 border-t border-gray-100">
               <button 
                 onClick={onSeeMore}
-                className="group flex items-center gap-3 text-[#1A3C34] font-black uppercase tracking-widest text-sm hover:text-[#FF5E3A] transition-colors"
+                className="group flex items-center gap-3 text-[#1A3C34] font-black uppercase tracking-widest text-sm hover:text-[#b0513a] transition-colors"
               >
-                <PlusCircle size={20} className="text-[#FF5E3A] group-hover:rotate-90 transition-transform duration-300" />
+                <PlusCircle size={20} className="text-[#b0513a] group-hover:rotate-90 transition-transform duration-300" />
                 Voir toute la sélection
               </button>
             </div>

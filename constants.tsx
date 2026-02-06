@@ -2,7 +2,7 @@
 import { MenuCategory, Testimonial } from './types';
 
 export const COLORS = {
-  primary: '#FF5E3A', // Orange-rouge
+  primary: '#b0513a', // Orange-rouge
   secondary: '#1A3C34', // Vert Sombre
   background: '#FAF9F6', // Off-white
 };
