@@ -15,9 +15,9 @@ const Hero: React.FC = () => {
 
       {/* Decorative top line */}
       <div className="absolute top-32 left-1/2 -translate-x-1/2 z-10 flex items-center gap-4">
-        <span className="block w-12 h-[1px] bg-[#b0513a]"></span>
-        <span className="text-[#b0513a] text-[10px] uppercase tracking-[0.4em] font-bold">Depuis Beaumont</span>
-        <span className="block w-12 h-[1px] bg-[#b0513a]"></span>
+        <span className="block w-12 h-[1px] bg-[#d4735a]"></span>
+        <span className="text-[#d4735a] text-[10px] uppercase tracking-[0.4em] font-bold">Depuis Beaumont</span>
+        <span className="block w-12 h-[1px] bg-[#d4735a]"></span>
       </div>
 
       {/* Content */}
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
         </p>
         <h1 className="text-white text-5xl md:text-7xl lg:text-9xl font-bold leading-[0.9] mb-8 uppercase tracking-tight">
           Pizzeria
-          <span className="block text-[#b0513a]">à Beaumont</span>
+          <span className="block text-[#d4735a]">à Beaumont</span>
         </h1>
         <div className="flex items-center justify-center gap-6 mb-10">
           <span className="block w-16 h-[1px] bg-white/30"></span>
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
           <span className="block w-16 h-[1px] bg-white/30"></span>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
-          <a href="tel:071327874" className="group bg-[#b0513a] text-white px-10 py-4 font-bold hover:bg-[#e04d2b] transition-all transform hover:-translate-y-1 shadow-2xl flex items-center justify-center gap-3 uppercase text-xs tracking-[0.2em]">
+          <a href="tel:071327874" className="group bg-[#d4735a] text-white px-10 py-4 font-bold hover:bg-[#e04d2b] transition-all transform hover:-translate-y-1 shadow-2xl flex items-center justify-center gap-3 uppercase text-xs tracking-[0.2em]">
             <Phone size={16} className="group-hover:animate-pulse" />
             Commander
           </a>
