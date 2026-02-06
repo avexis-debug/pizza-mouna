@@ -66,10 +66,15 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
           </div>
 
           {/* CTA & Phone */}
-          <div className="hidden md:flex items-center gap-6">
-            <a href={`tel:${CONTACT_INFO.phone1}`} className="flex items-center gap-2 text-[#1A3C34] hover:text-[#b0513a] transition-colors font-black text-sm tracking-tight">
-              <Phone size={16} className="text-[#b0513a]" /> {CONTACT_INFO.phone1}
-            </a>
+          <div className="hidden md:flex items-center gap-5">
+            <div className="flex flex-col text-right">
+              <a href={`tel:${CONTACT_INFO.phone1}`} className="flex items-center gap-2 text-[#1A3C34] hover:text-[#b0513a] transition-colors font-black text-sm tracking-tight">
+                <Phone size={14} className="text-[#b0513a]" /> {CONTACT_INFO.phone1}
+              </a>
+              <a href={`tel:${CONTACT_INFO.phone2}`} className="flex items-center gap-2 text-[#1A3C34] hover:text-[#b0513a] transition-colors font-black text-sm tracking-tight">
+                <Phone size={14} className="text-[#b0513a]" /> {CONTACT_INFO.phone2}
+              </a>
+            </div>
             <a href={`tel:${CONTACT_INFO.phone1}`} className="bg-[#1A3C34] text-white px-6 py-3 rounded-full font-bold hover:bg-[#2c534a] transition-all uppercase text-[10px] tracking-widest shadow-lg transform hover:scale-105">
               Commander
             </a>
@@ -103,9 +108,12 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
             </div>
             <a href="#notre-pizzeria" className="text-[#1A3C34] font-bold uppercase text-xs tracking-widest">Notre Pizzeria</a>
             <a href="#contact" className="text-[#1A3C34] font-bold uppercase text-xs tracking-widest">Contact</a>
-            <div className="pt-4 flex flex-col gap-4">
+            <div className="pt-4 flex flex-col gap-3">
                 <a href={`tel:${CONTACT_INFO.phone1}`} className="flex items-center gap-3 font-black text-[#1A3C34]">
                     <Phone size={18} className="text-[#b0513a]" /> {CONTACT_INFO.phone1}
+                </a>
+                <a href={`tel:${CONTACT_INFO.phone2}`} className="flex items-center gap-3 font-black text-[#1A3C34]">
+                    <Phone size={18} className="text-[#b0513a]" /> {CONTACT_INFO.phone2}
                 </a>
                 <a href={`tel:${CONTACT_INFO.phone1}`} className="bg-[#b0513a] text-white py-4 rounded-xl text-center font-bold uppercase text-xs tracking-widest">
                     Passer une commande
