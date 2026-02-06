@@ -92,7 +92,7 @@ export const PASTA_MENU: MenuCategory = {
 
 export const PREPARED_MENU: MenuCategory = {
   title: 'Les Plats Préparés',
-  image: '/Pates.jpg',
+  image: '/Lasagna.jpg',
   items: [
     { name: 'Cannelloni à la Viande', description: '', price: '12,00 €' },
     { name: 'Lasagne Bolognaise', description: '', price: '12,00 €' },
@@ -136,6 +136,6 @@ export const TESTIMONIALS: Testimonial[] = [
 export const GALLERY_IMAGES = [
   '/Pizza.jpg',
   '/Pates.jpg',
+  '/Lasagna.jpg',
   '/Viande.jpg',
-  '/Pizza.jpg',
 ];

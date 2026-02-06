@@ -4,7 +4,7 @@ import React from 'react';
 const categories = [
   { name: 'Pizzas', img: '/Pizza.jpg', href: '#section-pizzas' },
   { name: 'Pâtes', img: '/Pates.jpg', href: '#section-pates' },
-  { name: 'Plats Préparés', img: '/Pates.jpg', href: '#section-plats' },
+  { name: 'Plats Préparés', img: '/Lasagna.jpg', href: '#section-plats' },
   { name: 'Viandes', img: '/Viande.jpg', href: '#section-viandes' },
 ];
 
