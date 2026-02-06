@@ -70,7 +70,7 @@ const App: React.FC = () => {
         {/* Pastas */}
         <div className="py-10 bg-[#FAF9F6]/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
-                <h3 id="section-pates" className="text-xl md:text-2xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Pâtes & Spécialités</h3>
+                <h3 id="section-pates" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Pâtes & Spécialités</h3>
             </div>
             <MenuSection 
               category={PASTA_MENU} 
@@ -82,7 +82,7 @@ const App: React.FC = () => {
         {/* Plats Préparés */}
         <div className="py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
-                <h3 id="section-plats" className="text-xl md:text-2xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Plats Préparés</h3>
+                <h3 id="section-plats" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Plats Préparés</h3>
             </div>
             <MenuSection
               category={PREPARED_MENU}
@@ -94,7 +94,7 @@ const App: React.FC = () => {
         {/* Escalopes */}
         <div className="py-10 bg-[#FAF9F6]/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
-                <h3 id="section-viandes" className="text-xl md:text-2xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Escalopes Gourmet</h3>
+                <h3 id="section-viandes" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Escalopes</h3>
             </div>
             <MenuSection
               category={MEAT_MENU}
