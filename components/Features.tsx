@@ -44,8 +44,8 @@ const Features: React.FC = () => {
                   <Clock className="text-[#b0513a]" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#1A3C34]">Ouvert 7j/7</h4>
-                  <p className="text-gray-500 text-sm">Midi et soir pour votre plaisir</p>
+                  <h4 className="font-bold text-[#1A3C34]">Ouvert 5j/7</h4>
+                  <p className="text-gray-500 text-sm">Midi et soir le week-end, soir en semaine</p>
                 </div>
               </div>
             </div>

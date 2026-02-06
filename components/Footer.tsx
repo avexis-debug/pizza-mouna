@@ -49,9 +49,10 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="text-[#b0513a] mt-1 shrink-0" />
-                <div className="text-xs">
-                    <p>7j/7 : 11h30 - 14h00</p>
-                    <p>et 17h30 - 22h00</p>
+                <div className="text-xs space-y-1">
+                    <p className="font-bold">Ven-Sam-Dim : 11h30-14h & 17h30-22h</p>
+                    <p>Mar-Jeu : 17h30-22h</p>
+                    <p className="text-white/60">Lun & Mer : Fermé</p>
                 </div>
               </li>
             </ul>
