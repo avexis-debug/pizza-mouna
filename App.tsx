@@ -61,6 +61,7 @@ const App: React.FC = () => {
         </div>
         
         {/* Pizzas */}
+        <div id="section-pizzas"></div>
         <MenuSection 
           category={popularPizzas} 
           reversed={false} 
@@ -68,7 +69,7 @@ const App: React.FC = () => {
         />
         
         {/* Pastas */}
-        <div className="py-10 bg-[#FAF9F6]/50">
+        <div id="section-pates" className="py-10 bg-[#FAF9F6]/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
                 <h3 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-[#1A3C34]">Nos Pâtes & Spécialités</h3>
             </div>
@@ -80,7 +81,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Plats Préparés */}
-        <div className="py-10">
+        <div id="section-plats" className="py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
                 <h3 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-[#1A3C34]">Nos Plats Préparés</h3>
             </div>
@@ -92,7 +93,7 @@ const App: React.FC = () => {
         </div>
 
         {/* Escalopes */}
-        <div className="py-10 bg-[#FAF9F6]/50">
+        <div id="section-viandes" className="py-10 bg-[#FAF9F6]/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
                 <h3 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-[#1A3C34]">Nos Escalopes Gourmet</h3>
             </div>
