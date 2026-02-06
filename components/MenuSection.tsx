@@ -37,7 +37,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
                   </div>
                 </div>
                 <div className="flex-grow border-b border-dotted border-gray-300 mx-4"></div>
-                <span className="text-[#b0513a] font-bold text-lg bg-white px-3 py-1 rounded-sm shadow-sm">{item.price}</span>
+                <span className="text-[#b0513a] font-bold text-lg bg-white px-3 py-1 rounded-sm shadow-sm whitespace-nowrap shrink-0">{item.price}</span>
               </div>
               <p className="text-gray-500 text-sm leading-relaxed max-w-lg italic">
                 {item.description}
