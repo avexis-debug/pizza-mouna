@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
         </p>
         <h1 className="text-white text-5xl md:text-7xl lg:text-9xl font-bold leading-[0.9] mb-8 uppercase tracking-tight">
           Pizzeria
-          <span className="block text-[#d4735a]">à Beaumont</span>
+          <span className="block">à Beaumont</span>
         </h1>
         <div className="flex items-center justify-center gap-6 mb-10">
           <span className="block w-16 h-[1px] bg-white/30"></span>
