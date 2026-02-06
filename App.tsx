@@ -44,10 +44,10 @@ const App: React.FC = () => {
       <Hero />
       <TopCategories onNavigateMenu={() => handleNavigateToMenu()} />
       
-      <section id="menu" className="py-20 bg-white">
+      <section id="menu" className="py-10 md:py-20 bg-white">
         {/* Pizzas */}
-        <div className="py-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+        <div className="py-4 md:py-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 md:mb-8">
                 <h3 id="section-pizzas" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Pizzas</h3>
             </div>
         <MenuSection 
@@ -58,8 +58,8 @@ const App: React.FC = () => {
         </div>
 
         {/* Pastas */}
-        <div className="py-10 bg-[#FAF9F6]/50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+        <div className="py-4 md:py-10 bg-[#FAF9F6]/50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 md:mb-8">
                 <h3 id="section-pates" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Pâtes</h3>
             </div>
             <MenuSection 
@@ -70,8 +70,8 @@ const App: React.FC = () => {
         </div>
 
         {/* Plats Préparés */}
-        <div className="py-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+        <div className="py-4 md:py-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 md:mb-8">
                 <h3 id="section-plats" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Plats Préparés</h3>
             </div>
             <MenuSection
@@ -82,8 +82,8 @@ const App: React.FC = () => {
         </div>
 
         {/* Escalopes */}
-        <div className="py-10 bg-[#FAF9F6]/50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+        <div className="py-4 md:py-10 bg-[#FAF9F6]/50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 md:mb-8">
                 <h3 id="section-viandes" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Escalopes</h3>
             </div>
             <MenuSection

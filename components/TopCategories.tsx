@@ -14,9 +14,9 @@ interface TopCategoriesProps {
 
 const TopCategories: React.FC<TopCategoriesProps> = ({ onNavigateMenu }) => {
   return (
-    <section className="py-20 bg-[#FAF9F6]">
+    <section className="py-10 md:py-20 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-[#1A3C34] text-4xl font-bold mb-16 uppercase tracking-tight">Nos Spécialités</h2>
+        <h2 className="text-center text-[#1A3C34] text-3xl md:text-4xl font-bold mb-8 md:mb-16 uppercase tracking-tight">Nos Spécialités</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           {categories.map((cat, idx) => (
             <a key={idx} href={cat.href} className="group cursor-pointer flex flex-col items-center">
@@ -28,7 +28,7 @@ const TopCategories: React.FC<TopCategoriesProps> = ({ onNavigateMenu }) => {
             </a>
           ))}
         </div>
-        <div className="text-center mt-12">
+        <div className="text-center mt-8 md:mt-12">
           <button
             onClick={onNavigateMenu}
             className="inline-flex items-center gap-2 bg-[#1A3C34] text-white px-10 py-4 rounded-full font-black hover:bg-[#234d43] transition-all transform hover:scale-105 shadow-xl uppercase tracking-widest text-[11px]"

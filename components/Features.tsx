@@ -4,9 +4,9 @@ import { Flame, Truck, Clock } from 'lucide-react';
 
 const Features: React.FC = () => {
   return (
-    <section id="notre-pizzeria" className="py-20 bg-white">
+    <section id="notre-pizzeria" className="py-10 md:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse lg:flex-row gap-16 items-center">
+        <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-16 items-center">
           {/* Texte */}
           <div className="w-full lg:w-1/2">
             <p className="text-[#b0513a] font-serif italic mb-2">Notre Histoire</p>

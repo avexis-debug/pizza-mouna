@@ -4,9 +4,9 @@ import { User, Mail, Phone, Calendar, Users } from 'lucide-react';
 
 const ContactForm: React.FC = () => {
   return (
-    <section id="contact" className="py-20 bg-[#FAF9F6]">
+    <section id="contact" className="py-10 md:py-20 bg-[#FAF9F6]">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <p className="text-[#b0513a] font-serif italic mb-2">Contactez-nous</p>
           <h2 className="text-4xl font-bold">Prendre Contact</h2>
         </div>

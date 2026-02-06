@@ -14,15 +14,15 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
   const displayItems = category.items.slice(0, 6);
 
   return (
-    <div className={`py-12 flex flex-col-reverse ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12`}>
+    <div className={`py-4 md:py-12 flex flex-col-reverse ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-6 md:gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 md:mb-12`}>
       {/* Menu List */}
-      <div className="w-full lg:w-3/5 bg-[#FAF9F6] p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
-        <h3 className="text-3xl font-bold mb-8 flex items-center">
+      <div className="w-full lg:w-3/5 bg-[#FAF9F6] p-5 md:p-12 rounded-2xl shadow-sm border border-gray-100">
+        <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-8 flex items-center">
           <span className="w-8 h-[2px] bg-[#1A3C34] mr-3"></span>
           {category.title}
         </h3>
         
-        <div className="space-y-8">
+        <div className="space-y-4 md:space-y-8">
           {displayItems.map((item, idx) => (
             <div key={idx} className="group cursor-pointer">
               <div className="flex justify-between items-baseline mb-1">
@@ -65,7 +65,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
           <img 
             src={category.image || '/Pizza.jpg'} 
             alt={category.title} 
-            className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
+            className="w-full h-[250px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
         </div>

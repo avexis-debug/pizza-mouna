@@ -7,7 +7,7 @@ const Testimonials: React.FC = () => {
   const testimonial = TESTIMONIALS[0];
 
   return (
-    <section className="py-24 bg-[#FAF9F6]">
+    <section className="py-10 md:py-24 bg-[#FAF9F6]">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <p className="text-[#b0513a] font-serif italic mb-2">Témoignages</p>
         <h2 className="text-4xl md:text-5xl font-bold mb-16">Ce que Disent Nos Clients</h2>

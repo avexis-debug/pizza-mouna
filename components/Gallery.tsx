@@ -4,8 +4,8 @@ import { GALLERY_IMAGES } from '../constants';
 
 const Gallery: React.FC = () => {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+    <section className="py-10 md:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8 md:mb-16">
         <p className="text-[#b0513a] font-serif italic mb-2">Galerie</p>
         <h2 className="text-4xl font-bold">Nos Plats en Images</h2>
       </div>
