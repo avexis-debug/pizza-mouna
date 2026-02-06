@@ -26,12 +26,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigateMenu }) => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => window.location.href = '/'}>
-            <div className="flex flex-col leading-none">
-              <span className="text-xl md:text-2xl font-black text-[#1A3C34] tracking-tight uppercase">
-                  La Mouna <span className="text-[#FF5E3A]">Pizza</span>
-              </span>
-              <span className="text-[9px] text-[#1A3C34]/50 tracking-[0.2em] uppercase ml-1">Feu de bois • Beaumont</span>
-            </div>
+            <img src="/Logo_LaMouna.png" alt="La Mouna Pizza" className="h-14 md:h-16 w-auto" />
           </div>
 
           {/* Desktop Nav */}

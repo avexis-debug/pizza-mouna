@@ -10,11 +10,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand & Map */}
           <div className="lg:col-span-2">
-             <div className="flex flex-col leading-none mb-6">
-                <span className="text-3xl font-black tracking-tight uppercase">
-                    La Mouna <span className="text-[#FF5E3A]">Pizza</span>
-                </span>
-                <span className="text-xs text-white/50 tracking-[0.2em] uppercase ml-1">Au feu de bois • Beaumont</span>
+             <div className="mb-6">
+                <img src="/Logo_LaMouna.png" alt="La Mouna Pizza" className="h-16 w-auto brightness-0 invert" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 italic max-w-md">
               "Livraison ou à emporter. Le goût authentique de l'Italie cuit avec passion au feu de bois à Beaumont."
