@@ -1,59 +1,68 @@
 
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
+import { Flame, Truck, Clock } from 'lucide-react';
 
 const Features: React.FC = () => {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="flex flex-col-reverse lg:flex-row gap-16 items-center">
+          {/* Texte */}
           <div className="w-full lg:w-1/2">
-            <p className="text-[#FF5E3A] font-serif italic mb-2">Caractéristiques</p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Des Caractéristiques qui Rendent Chaque Part Meilleure
+            <p className="text-[#FF5E3A] font-serif italic mb-2">Notre Histoire</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              La Mouna Pizza, votre pizzeria au feu de bois à Beaumont
             </h2>
-            <p className="text-gray-600 mb-8 leading-relaxed">
-              Nos pizzas sont préparées avec les ingrédients les plus frais, une pâte pétrie à la main et des saveurs parfaitement équilibrées. Chaque part reflète notre passion, notre goût et l'expérience pizza ultime.
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Depuis notre ouverture, La Mouna Pizza s'est imposée comme la référence de la pizza artisanale à Beaumont. Notre secret ? Un four au feu de bois traditionnel qui donne à chaque pizza une croûte croustillante et un goût fumé incomparable.
             </p>
-            
-            <ul className="space-y-4 mb-10">
-              <li className="flex items-center gap-3 text-lg font-medium text-[#1A3C34]">
-                <CheckCircle className="text-[#FF5E3A]" fill="#FF5E3A" stroke="#FFF" />
-                Cuite au Four à Pierre pour une Croûte Parfaite
-              </li>
-              <li className="flex items-center gap-3 text-lg font-medium text-[#1A3C34]">
-                <CheckCircle className="text-[#FF5E3A]" fill="#FF5E3A" stroke="#FFF" />
-                Large Variété de Pizzas Classiques et Signatures
-              </li>
-              <li className="flex items-center gap-3 text-lg font-medium text-[#1A3C34]">
-                <CheckCircle className="text-[#FF5E3A]" fill="#FF5E3A" stroke="#FFF" />
-                Garnitures Personnalisables pour Tous les Goûts
-              </li>
-            </ul>
+            <p className="text-gray-600 mb-10 leading-relaxed">
+              Nous sélectionnons les meilleurs ingrédients pour vous offrir des pizzas généreuses et authentiques. De la pâte pétrie à la main chaque jour jusqu'à la cuisson au feu de bois, chaque étape est réalisée avec passion et savoir-faire.
+            </p>
 
-            <button className="bg-[#FF5E3A] text-white px-8 py-3 rounded-sm font-bold hover:bg-[#e04d2b] transition-colors shadow-lg">
-              En Savoir Plus
-            </button>
+            <div className="space-y-5">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-[#FF5E3A]/10 rounded-lg flex items-center justify-center shrink-0">
+                  <Flame className="text-[#FF5E3A]" size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#1A3C34]">Cuisson au feu de bois</h4>
+                  <p className="text-gray-500 text-sm">Un goût authentique et une croûte parfaite</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-[#FF5E3A]/10 rounded-lg flex items-center justify-center shrink-0">
+                  <Truck className="text-[#FF5E3A]" size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#1A3C34]">Livraison gratuite</h4>
+                  <p className="text-gray-500 text-sm">Sur Beaumont et ses environs</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-[#FF5E3A]/10 rounded-lg flex items-center justify-center shrink-0">
+                  <Clock className="text-[#FF5E3A]" size={24} />
+                </div>
+                <div>
+                  <h4 className="font-bold text-[#1A3C34]">Ouvert 7j/7</h4>
+                  <p className="text-gray-500 text-sm">Midi et soir pour votre plaisir</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Image Collage */}
-          <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
-            <div className="relative h-full space-y-4">
-              <div className="bg-[#1A3C34] text-white p-8 rounded-2xl aspect-square flex flex-col justify-center items-center text-center">
-                <div className="text-4xl font-bold mb-2">10+</div>
-                <p className="text-sm opacity-80 uppercase tracking-widest">Prix d'Excellence Remportés</p>
-              </div>
+          {/* Image */}
+          <div className="w-full lg:w-1/2">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/Pates.jpg"
-                alt="Pâtes fraîches"
-                className="w-full h-64 object-cover rounded-2xl shadow-lg"
+                src="/Pizza.jpg"
+                alt="Pizza au feu de bois - La Mouna Pizza Beaumont"
+                className="w-full h-[500px] object-cover"
               />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
+                <p className="text-white font-serif italic text-lg">Cuite au feu de bois, comme en Italie.</p>
+              </div>
             </div>
-            <img
-              src="/Pizza.jpg"
-              alt="Pizza fraiche"
-              className="w-full h-full object-cover rounded-2xl shadow-lg"
-            />
           </div>
         </div>
       </div>
