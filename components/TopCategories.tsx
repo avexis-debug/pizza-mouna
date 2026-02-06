@@ -8,7 +8,11 @@ const categories = [
   { name: 'Viandes', img: '/Viande.jpg', href: '#section-viandes' },
 ];
 
-const TopCategories: React.FC = () => {
+interface TopCategoriesProps {
+  onNavigateMenu: () => void;
+}
+
+const TopCategories: React.FC<TopCategoriesProps> = ({ onNavigateMenu }) => {
   return (
     <section className="py-20 bg-[#FAF9F6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,6 +27,14 @@ const TopCategories: React.FC = () => {
               <p className="text-[#1A3C34] font-bold text-center group-hover:text-[#b0513a] transition-colors uppercase text-sm tracking-wider">{cat.name}</p>
             </a>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <button
+            onClick={onNavigateMenu}
+            className="inline-flex items-center gap-2 bg-[#1A3C34] text-white px-10 py-4 rounded-full font-black hover:bg-[#234d43] transition-all transform hover:scale-105 shadow-xl uppercase tracking-widest text-[11px]"
+          >
+            VOIR TOUTE LA CARTE
+          </button>
         </div>
       </div>
     </section>

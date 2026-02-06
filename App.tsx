@@ -42,25 +42,11 @@ const App: React.FC = () => {
     <div className="min-h-screen overflow-x-hidden pt-20">
       <Header onNavigateMenu={handleNavigateToMenu} />
       <Hero />
-      <TopCategories />
+      <TopCategories onNavigateMenu={() => handleNavigateToMenu()} />
       
       <section id="menu" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-          <p className="text-[#b0513a] font-serif italic mb-2">Notre Sélection Gourmet</p>
-          <h2 id="section-pizzas" className="text-4xl md:text-5xl font-bold mb-4 uppercase tracking-tighter scroll-mt-24">Nos Incontournables</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-10 text-sm md:text-base">
-            Cuit au feu de bois selon la tradition. Une pâte fine, croustillante et des ingrédients sélectionnés.
-          </p>
-          
-          <button 
-            onClick={() => handleNavigateToMenu('pizzas')}
-            className="inline-flex items-center gap-2 bg-[#1A3C34] text-white px-10 py-4 rounded-full font-black hover:bg-[#234d43] transition-all transform hover:scale-105 shadow-xl uppercase tracking-widest text-[11px]"
-          >
-            VOIR TOUTE LA CARTE
-          </button>
-        </div>
-        
         {/* Pizzas */}
+        <div id="section-pizzas" className="scroll-mt-24"></div>
         <MenuSection 
           category={popularPizzas} 
           reversed={false} 
