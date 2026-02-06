@@ -11,7 +11,7 @@ const AboutUs: React.FC = () => {
           <div className="w-full lg:w-1/2 relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop" 
+                src="/Pizza.jpg" 
                 alt="Chef préparant la pizza" 
                 className="w-full h-[500px] object-cover"
               />

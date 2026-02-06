@@ -63,7 +63,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
       <div className="w-full lg:w-2/5">
         <div className="relative group overflow-hidden rounded-2xl shadow-xl">
           <img 
-            src={category.image || 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop'} 
+            src={category.image || '/Pizza.jpg'} 
             alt={category.title} 
             className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
           />

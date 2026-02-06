@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       {/* Background with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-[10000ms] hover:scale-110"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2000&auto=format&fit=crop")' }}
+        style={{ backgroundImage: 'url("/Pizza.jpg")' }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
       </div>

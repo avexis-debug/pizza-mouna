@@ -16,7 +16,7 @@ export const CONTACT_INFO = {
 
 export const PIZZA_MENU: MenuCategory = {
   title: 'Les Pizzas',
-  image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop',
+  image: '/Pizza.jpg',
   items: [
     { name: 'Margarita', description: 'Tomate, mozzarella', price: '10,00 €', popular: true },
     { name: 'Prosciuto', description: 'Tomate, mozzarella, jambon', price: '11,00 €' },
@@ -70,7 +70,7 @@ export const ENTREE_MENU: MenuCategory = {
 
 export const PASTA_MENU: MenuCategory = {
   title: 'Les Pastas',
-  image: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?q=80&w=800&auto=format&fit=crop',
+  image: '/Pates.jpg',
   items: [
     { name: 'Napoli', description: '', price: '10,00 €' },
     { name: 'Arrabiatta', description: '', price: '10,00 €' },
@@ -104,7 +104,7 @@ export const PREPARED_MENU: MenuCategory = {
 
 export const MEAT_MENU: MenuCategory = {
   title: 'Les Viandes',
-  image: 'https://images.unsplash.com/photo-1603048588665-791ca8aea617?q=80&w=800&auto=format&fit=crop',
+  image: '/Viande.jpg',
   items: [
     { name: 'Escalope Milanaise', description: '', price: '16,00 €' },
     { name: 'Escalope Archiduc', description: '', price: '16,00 €' },
@@ -134,8 +134,8 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const GALLERY_IMAGES = [
-  'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=400&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?q=80&w=400&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=400&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=400&auto=format&fit=crop',
+  '/Pizza.jpg',
+  '/Pates.jpg',
+  '/Viande.jpg',
+  '/Pizza.jpg',
 ];

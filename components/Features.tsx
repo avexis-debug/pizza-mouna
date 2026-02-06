@@ -43,15 +43,15 @@ const Features: React.FC = () => {
                 <div className="text-4xl font-bold mb-2">10+</div>
                 <p className="text-sm opacity-80 uppercase tracking-widest">Prix d'Excellence Remportés</p>
               </div>
-              <img 
-                src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=400&auto=format&fit=crop" 
-                alt="Cuisson pizza" 
+              <img
+                src="/Pates.jpg"
+                alt="Pâtes fraîches"
                 className="w-full h-64 object-cover rounded-2xl shadow-lg"
               />
             </div>
-            <img 
-              src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=400&auto=format&fit=crop" 
-              alt="Pizza fraiche" 
+            <img
+              src="/Pizza.jpg"
+              alt="Pizza fraiche"
               className="w-full h-full object-cover rounded-2xl shadow-lg"
             />
           </div>

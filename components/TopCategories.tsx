@@ -2,12 +2,12 @@
 import React from 'react';
 
 const categories = [
-  { name: 'Les Pizzas', img: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=300&auto=format&fit=crop' },
-  { name: 'Les Entrées', img: 'https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=300&auto=format&fit=crop' },
-  { name: 'Les Pastas', img: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?q=80&w=300&auto=format&fit=crop' },
-  { name: 'Plats Préparés', img: 'https://images.unsplash.com/photo-1546548970-71785318a17b?q=80&w=300&auto=format&fit=crop' },
-  { name: 'Les Viandes', img: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=300&auto=format&fit=crop' },
-  { name: 'Les Boissons', img: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=300&auto=format&fit=crop' },
+  { name: 'Les Pizzas', img: '/Pizza.jpg' },
+  { name: 'Les Entrées', img: '/Pizza.jpg' },
+  { name: 'Les Pastas', img: '/Pates.jpg' },
+  { name: 'Plats Préparés', img: '/Pates.jpg' },
+  { name: 'Les Viandes', img: '/Viande.jpg' },
+  { name: 'Les Boissons', img: '/Pizza.jpg' },
 ];
 
 const TopCategories: React.FC = () => {

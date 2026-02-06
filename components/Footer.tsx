@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           {/* Brand & Map */}
           <div className="lg:col-span-2">
              <div className="mb-6">
-                <img src="/Logo_LaMouna.png" alt="La Mouna Pizza" className="h-16 w-auto brightness-0 invert" />
+                <img src="/Logo_Footer.png" alt="La Mouna Pizza" className="h-16 w-auto" />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 italic max-w-md">
               "Livraison ou à emporter. Le goût authentique de l'Italie cuit avec passion au feu de bois à Beaumont."
