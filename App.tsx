@@ -50,10 +50,11 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 md:mb-8">
                 <h3 id="section-pizzas" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Pizzas</h3>
             </div>
-        <MenuSection 
-          category={popularPizzas} 
-          reversed={false} 
+        <MenuSection
+          category={popularPizzas}
+          reversed={false}
           onSeeMore={() => handleNavigateToMenu('pizzas')}
+          seeMoreLabel="Voir toutes les pizzas"
         />
         </div>
 
@@ -62,10 +63,11 @@ const App: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 md:mb-8">
                 <h3 id="section-pates" className="text-2xl md:text-3xl font-bold uppercase tracking-widest text-[#1A3C34] scroll-mt-24">Nos Pâtes</h3>
             </div>
-            <MenuSection 
-              category={PASTA_MENU} 
-              reversed={true} 
+            <MenuSection
+              category={PASTA_MENU}
+              reversed={true}
               onSeeMore={() => handleNavigateToMenu('pastas')}
+              seeMoreLabel="Voir toutes les pâtes"
             />
         </div>
 
@@ -77,7 +79,6 @@ const App: React.FC = () => {
             <MenuSection
               category={PREPARED_MENU}
               reversed={false}
-              onSeeMore={() => handleNavigateToMenu('prepares')}
             />
         </div>
 

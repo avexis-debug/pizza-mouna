@@ -7,9 +7,10 @@ interface MenuSectionProps {
   category: MenuCategory;
   reversed?: boolean;
   onSeeMore?: () => void;
+  seeMoreLabel?: string;
 }
 
-const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore }) => {
+const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore, seeMoreLabel }) => {
   // On limite l'affichage à 6 items sur la home
   const displayItems = category.items.slice(0, 6);
 
@@ -52,7 +53,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
                 className="group flex items-center gap-3 text-[#1A3C34] font-black uppercase tracking-widest text-sm hover:text-[#b0513a] transition-colors"
               >
                 <PlusCircle size={20} className="text-[#b0513a] group-hover:rotate-90 transition-transform duration-300" />
-                Voir toute la sélection
+                {seeMoreLabel || 'Voir toute la sélection'}
               </button>
             </div>
           )}
