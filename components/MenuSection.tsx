@@ -14,7 +14,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore
   const displayItems = category.items.slice(0, 6);
 
   return (
-    <div className={`py-12 flex flex-col ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12`}>
+    <div className={`py-12 flex flex-col-reverse ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12`}>
       {/* Menu List */}
       <div className="w-full lg:w-3/5 bg-[#FAF9F6] p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
         <h3 className="text-3xl font-bold mb-8 flex items-center">
