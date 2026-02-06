@@ -9,7 +9,7 @@ import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import MenuPage from './components/MenuPage';
-import { PIZZA_MENU, PASTA_MENU, MEAT_MENU } from './constants';
+import { PIZZA_MENU, PASTA_MENU, PREPARED_MENU, MEAT_MENU } from './constants';
 
 const App: React.FC = () => {
   const [view, setView] = useState<'home' | 'menu'>('home');
@@ -79,14 +79,26 @@ const App: React.FC = () => {
             />
         </div>
 
-        {/* Escalopes */}
+        {/* Plats Préparés */}
         <div className="py-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+                <h3 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-[#1A3C34]">Nos Plats Préparés</h3>
+            </div>
+            <MenuSection
+              category={PREPARED_MENU}
+              reversed={false}
+              onSeeMore={() => handleNavigateToMenu('prepares')}
+            />
+        </div>
+
+        {/* Escalopes */}
+        <div className="py-10 bg-[#FAF9F6]/50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
                 <h3 className="text-xl md:text-2xl font-bold uppercase tracking-widest text-[#1A3C34]">Nos Escalopes Gourmet</h3>
             </div>
-            <MenuSection 
-              category={MEAT_MENU} 
-              reversed={false} 
+            <MenuSection
+              category={MEAT_MENU}
+              reversed={true}
             />
         </div>
       </section>

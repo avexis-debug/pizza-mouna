@@ -92,7 +92,7 @@ export const PASTA_MENU: MenuCategory = {
 
 export const PREPARED_MENU: MenuCategory = {
   title: 'Les Plats Préparés',
-  image: 'https://images.unsplash.com/photo-1546548970-71785318a17b?q=80&w=800&auto=format&fit=crop',
+  image: '/Pates.jpg',
   items: [
     { name: 'Cannelloni à la Viande', description: '', price: '12,00 €' },
     { name: 'Lasagne Bolognaise', description: '', price: '12,00 €' },
