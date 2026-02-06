@@ -1,0 +1,77 @@
+
+import React from 'react';
+import { MenuCategory } from '../types';
+import { PlusCircle } from 'lucide-react';
+
+interface MenuSectionProps {
+  category: MenuCategory;
+  reversed?: boolean;
+  onSeeMore?: () => void;
+}
+
+const MenuSection: React.FC<MenuSectionProps> = ({ category, reversed, onSeeMore }) => {
+  // On limite l'affichage à 6 items sur la home
+  const displayItems = category.items.slice(0, 6);
+
+  return (
+    <div className={`py-12 flex flex-col ${reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12`}>
+      {/* Menu List */}
+      <div className="w-full lg:w-3/5 bg-[#FAF9F6] p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
+        <h3 className="text-3xl font-bold mb-8 flex items-center">
+          <span className="w-8 h-[2px] bg-[#1A3C34] mr-3"></span>
+          {category.title}
+        </h3>
+        
+        <div className="space-y-8">
+          {displayItems.map((item, idx) => (
+            <div key={idx} className="group cursor-pointer">
+              <div className="flex justify-between items-baseline mb-1">
+                <div className="flex items-center gap-3">
+                  <h4 className="text-xl font-bold group-hover:text-[#FF5E3A] transition-colors uppercase tracking-tight">{item.name}</h4>
+                  <div className="flex gap-2">
+                    {item.tags?.map((tag, tIdx) => (
+                      <span key={tIdx} className="text-[10px] uppercase font-bold text-[#1A3C34]/60 tracking-wider">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex-grow border-b border-dotted border-gray-300 mx-4"></div>
+                <span className="text-[#FF5E3A] font-bold text-lg bg-white px-3 py-1 rounded-sm shadow-sm">{item.price}</span>
+              </div>
+              <p className="text-gray-500 text-sm leading-relaxed max-w-lg italic">
+                {item.description}
+              </p>
+            </div>
+          ))}
+
+          {onSeeMore && (
+            <div className="pt-4 border-t border-gray-100">
+              <button 
+                onClick={onSeeMore}
+                className="group flex items-center gap-3 text-[#1A3C34] font-black uppercase tracking-widest text-sm hover:text-[#FF5E3A] transition-colors"
+              >
+                <PlusCircle size={20} className="text-[#FF5E3A] group-hover:rotate-90 transition-transform duration-300" />
+                Voir toute la sélection
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Featured Image */}
+      <div className="w-full lg:w-2/5">
+        <div className="relative group overflow-hidden rounded-2xl shadow-xl">
+          <img 
+            src={category.image || 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800&auto=format&fit=crop'} 
+            alt={category.title} 
+            className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MenuSection;

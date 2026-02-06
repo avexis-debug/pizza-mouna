@@ -1,0 +1,8 @@
+
+{
+  "name": "La Mouna Pizza - Beaumont",
+  "description": "Pizzeria artisanale au feu de bois à Beaumont. Livraison gratuite et vente à emporter.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
