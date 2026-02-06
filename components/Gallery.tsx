@@ -7,7 +7,7 @@ const Gallery: React.FC = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
         <p className="text-[#b0513a] font-serif italic mb-2">Galerie</p>
-        <h2 className="text-4xl font-bold">Instantanés de Gourmandise</h2>
+        <h2 className="text-4xl font-bold">Nos Plats en Images</h2>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 max-w-7xl mx-auto">
