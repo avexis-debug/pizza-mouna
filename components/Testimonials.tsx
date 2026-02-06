@@ -4,18 +4,18 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Jean D.',
-    quote: "La meilleure pizza au feu de bois de la région ! Le service de livraison est rapide et les produits sont toujours frais.",
+    name: 'Mathieu H.',
+    quote: "Pizza toujours aux top, large choix, les prix sont raisonnables et le service de livraison est rapide et pas cher, nous sommes satisfaits depuis plusieurs années. Bonne continuation !!!",
     rating: 5,
   },
   {
-    name: 'Sophie M.',
-    quote: "Des pâtes délicieuses et une escalope parmigiana incroyable. On y retourne chaque semaine !",
+    name: 'Salma T.',
+    quote: "Franchement, super pizzeria ! Les pizzas sont bien garnies, savoureuses, et la pâte est juste comme il faut. Le service est rapide et l'équipe super sympa. Je reviens toujours pour la pizza au saumon, ma préférée sans hésiter. Une vraie valeur sûre !",
     rating: 5,
   },
   {
-    name: 'Marc L.',
-    quote: "Livraison rapide, pizza chaude et croustillante. La Savoyarde est un must !",
+    name: 'Philippe H.',
+    quote: "Les pizzas sont bonnes, toujours été livré dans les temps annoncés et prix correct. Pizza cuite au feu de bois.",
     rating: 5,
   },
 ];

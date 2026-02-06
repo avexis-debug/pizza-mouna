@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         className="absolute inset-0 bg-cover bg-center z-0 scale-105"
         style={{ backgroundImage: 'url("/hero-banner.jpg")' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/70 to-black/90 md:from-black/70 md:via-black/50 md:to-black/80"></div>
       </div>
 
       {/* Decorative top line */}

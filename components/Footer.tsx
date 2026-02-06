@@ -57,10 +57,10 @@ const Footer: React.FC = () => {
               </li>
             </ul>
             <div className="flex gap-4 mt-8">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#d4735a] transition-all">
+              <a href="https://www.facebook.com/pizzerrialaMouna" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#d4735a] transition-all">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#d4735a] transition-all">
+              <a href="https://www.instagram.com/lamoouna/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#d4735a] transition-all">
                 <Instagram size={18} />
               </a>
             </div>
