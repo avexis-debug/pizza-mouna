@@ -55,8 +55,8 @@ const Features: React.FC = () => {
           <div className="w-full lg:w-1/2">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/Pizza.jpg"
-                alt="Pizza au feu de bois - La Mouna Pizza Beaumont"
+                src="/pizzeria.jpg"
+                alt="Pizzeria La Mouna - Beaumont"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8">
